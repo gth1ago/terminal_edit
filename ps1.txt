@@ -1,8 +1,11 @@
-#black background with light blue border
-PS1="\[\e]0;\u: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n> "
+# black background with light blue border
+PS1='\[\e]0;\u: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n> '
 
-#no background with red in User and cyan in folder
-PS1='${debian_chroot:+($debian_chroot)}\[\033[1;31m\]\u\[\033[1;31m\]:\[\033[01;36m\]\w\[\033[00m\] '
+# no background, with red in User and cyan in folder
+PS1='\[\e]0;\u: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[1;31m\]\u\[\033[1;31m\]:\[\033[01;36m\]\w\[\033[00m\] '
 
-#user with date in cyan color and green directory pointing with arrows
-PS1="\[\e]0;\u: \W\a\]${debian_chroot:+($debian_chroot)}\[\033[01;36m\] ✓ \u - \d\[\033[00m\] ⌘ \[\033[01;32m\]\w\[\033[01;32m\]\n⋗\[\033[01;32m\] "
+# user with date in cyan color and green directory pointing with arrows
+PS1='\[\e]0;\u: \W\a\]${debian_chroot:+($debian_chroot)}\[\033[01;36m\] ✓ \u - \d\[\033[00m\] ⌘ \[\033[01;32m\]\w\[\033[01;32m\]\n⋗\[\033[01;32m\] '
+
+# user in red with directories and arrows in cyan
+PS1='\[\e]0;\u: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[1;36m\]┌ \[\033[01;31m\]\u\[\033[1;31m\]:\[\033[01;36m\]\w\[\033[01;36m\] \n└─>\[\033[01;36m\] '
